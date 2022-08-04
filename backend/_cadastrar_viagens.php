@@ -45,7 +45,7 @@ try{
     
 
 }catch(PDOException $erro){
-
+    echo $erro->getMessage();
 }
 
 ?>
