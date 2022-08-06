@@ -42,10 +42,13 @@ try{
 
     // exibe mensagem de sucesso ao inserir
     echo " Cadastro realizado com sucesso";
-    
+
+    // fecha a conexao com o banco de dados
+    $con = null;
 
 }catch(PDOException $erro){
     echo $erro->getMessage();
+    die();
 }
 
 ?>

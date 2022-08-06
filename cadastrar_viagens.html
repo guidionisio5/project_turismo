@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Cadastro de Viagens</title>
 </head>
+
 <body>
     <div id="container">
-        <h3>Cadastro de Viagens</h3>
+        <div class="titulo">
+            <h2>Cadastro de Viagens</h2>
+        </div>
         <form action="backend/_cadastrar_viagens.php" method="post">
-            
-            <div>
-                <label for="titulo">Título:</label>
-                <input type="text" name="titulo" id="titulo">
+            <div class="formulario">
+                <div class="item">
+                    <label for="titulo">Título:</label>
+                    <input type="text" name="titulo" id="titulo" required>
+                </div>
+                <div class="item">
+                    <label for="local">Local:</label>
+                    <input type="text" name="local" id="local" required>
+                </div>
+                <div class="item">
+                    <label for="valor">Valor:</label>
+                    <input type="text" name="valor" id="valor" required>
+                </div>
             </div>
-            <div>
-                <label for="local">Local:</label>
-                <input type="text" name="local" id="local">
-            </div>
-            <div>
-                <label for="valor">Valor:</label>
-                <input type="number" name="valor" id="valor">
-            </div>
-            <div>
+            <div class="item-desc">
                 <label for="desc">Descrição:</label>
                 <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
             </div>
-            
-            <input type="submit" value="Cadastrar">
-        
         </form>
+        <div class="centraliza-botao">
+            <input class="botao" type="submit" value="Cadastrar">
+        </div>
     </div>
 
-    <script src="js/script.js"></script>
 </body>
+
 </html>
