@@ -11,19 +11,20 @@
     margin: 0 auto;
 }
 
-.titulo {
+#titulo {
     text-align: center;
     font-size: 30px;
     padding: 30px;
 }
 
+/* Inicio Cadastro de Viagens */
 .formulario{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
 }
 
-label{
+.subtitulo{
     font-size: 20px;
     font-weight: bold;
 }
@@ -53,4 +54,39 @@ label{
     padding: 15px 30px;
     margin-top: 20px;
 }
+/* Fim Cadastro de viagens */
 
+/* Inicio Listar viagens */
+#grid-viagens{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.figure-viagens{
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+
+.img-viagens{
+    width: 100%;
+}
+
+.figcaption-viagens{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.botao-viagens{
+    display: grid;
+    padding: 6px 12px;
+    margin: 10px auto;
+    background-color: #40d86e;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+}
+
+/* Fim Listar viagens */
