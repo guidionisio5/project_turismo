@@ -1,6 +1,6 @@
 <?php
 // incluindo arquivo de conexao
-include 'include/conexao.php';
+include 'includes/conexao.php';
 
 try{
     // monta a query sql
@@ -37,7 +37,7 @@ try{
 </head>
 <body>    
     <div id="container">
-        <h3 id="titulo">Lista de Viagens</h3> 
+        <h2 class="titulo">Lista de Viagens</h2> 
         <div id="grid-viagens">
             <?php
                 foreach($dados as $d):
@@ -57,6 +57,8 @@ try{
 
         </div>
     </div>
-
+    <?php 
+        $con = null;
+    ?> 
 </body>
 </html>

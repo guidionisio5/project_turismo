@@ -1,7 +1,7 @@
 <?php
 
 // Include da conexão com banco de dados 
-include '../include/conexao.php';
+include '../includes/conexao.php';
 // Final da conexão
 
 try{
