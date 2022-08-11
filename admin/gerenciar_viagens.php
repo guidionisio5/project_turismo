@@ -33,8 +33,8 @@
     <div id="container">
         <h2 class="titulo">Gerenciar Viagens</h2>
         <div id="tabela">
-            <table border="1">
-                <tr>
+            <table>
+                <tr class="item-tabela">
                     <th>ID</th>
                     <th>Título</th>
                     <th>Local</th>
@@ -46,7 +46,7 @@
                 <?php 
                     foreach($dados as $viagens):
                 ?>
-                <tr>
+                <tr class="item-tabela">
                     <td><?php echo $viagens['id'];?></td>
                     <td><?php echo $viagens['titulo'];?></td>
                     <td><?php echo $viagens['local'];?></td>

@@ -91,3 +91,19 @@
 /* Fim Listar viagens */
 
 /* Inicio Gerenciar viagens */
+#tabela{
+    display: grid;
+}
+
+#tabela table{
+    border-collapse: collapse;
+}
+
+.item-tabela{
+    text-align: center;  
+}
+
+#tabela th,td{
+    border: 2px solid black;
+}
+/* Fim Gerenciar produtos */
