@@ -52,7 +52,9 @@
                     <td><?php echo $viagens['local'];?></td>
                     <td><?php echo $viagens['valor'];?></td>
                     <td><?php echo $viagens['desc'];?></td>
-                    <td>Alterar</td>
+                    <td>
+                        <a href="../admin/alterar_viagens.php?id=<?php echo $viagens['id'];?>">Alterar</a>
+                    </td>
                     <td>
                         <a href="../backend/_deletar_viagens.php?id=<?php echo $viagens['id'];?>">Deletar</a>
                     </td>

@@ -18,7 +18,7 @@
 }
 
 /* Inicio Cadastro de Viagens */
-.formulario{
+#grid-formulario{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 50px;
@@ -99,6 +99,10 @@
     border-collapse: collapse;
 }
 
+#tabela tr th, tr td{
+    padding: 10px;
+}
+
 .item-tabela{
     text-align: center;  
 }
@@ -107,3 +111,7 @@
     border: 2px solid black;
 }
 /* Fim Gerenciar produtos */
+
+/* Inicio Alterar produtos */
+
+/* Fim Alterar produtos */
