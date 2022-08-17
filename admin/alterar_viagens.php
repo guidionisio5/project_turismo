@@ -38,7 +38,7 @@
     <div id="container">
         <h2 class="titulo">Alterar Viagens</h2>
         <form action="../backend/_alterar_viagens.php" method="post">
-            <div id="grid-formulario">
+            <div id="grid-alterar">
                 <div class="item">
                     <label class="subtitulo" for="id">ID</label>
                     <input type="text" name="id" id="id" value="<?php echo $dados[0]['id']?>" readonly>

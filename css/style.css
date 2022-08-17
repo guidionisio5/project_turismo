@@ -7,8 +7,10 @@
 
 #container{
     width: 80%;
-    height: auto;
+    height: 100vh;
     margin: 0 auto;
+    display: grid;
+    align-content: center;
 }
 
 .titulo {
@@ -21,7 +23,9 @@
 #grid-formulario{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 50px;
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px;
 }
 
 .subtitulo{
@@ -36,7 +40,7 @@
 }
 
 .item input{
-    padding: 10px 30px;
+    padding: 10px 50px;
 }
 
 .item-desc {
@@ -53,6 +57,7 @@
 .botao{
     padding: 15px 30px;
     margin-top: 20px;
+    font-weight: bold;
 }
 /* Fim Cadastro de viagens */
 
@@ -113,5 +118,32 @@
 /* Fim Gerenciar produtos */
 
 /* Inicio Alterar produtos */
-
+#grid-alterar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px;
+}
 /* Fim Alterar produtos */
+
+/* Inicio Entrar admin */
+.grid-usuario{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 30px;
+}
+
+.item-login{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.item-input{
+    width: 50vw;
+    padding: 10px;
+}
+/* Fim Entrar admin */
