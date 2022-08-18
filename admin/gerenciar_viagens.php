@@ -32,6 +32,8 @@
 <body>
     <div id="container">
         <h2 class="titulo">Gerenciar Viagens</h2>
+        <hr>
+        <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
         <div id="tabela">
             <table>
                 <tr class="item-tabela">

@@ -37,6 +37,8 @@
 <body>
     <div id="container">
         <h2 class="titulo">Alterar Viagens</h2>
+        <hr>
+        <a class="sublink" href="gerenciar_viagens.php">Gerenciar viagens</a>
         <form action="../backend/_alterar_viagens.php" method="post">
             <div id="grid-alterar">
                 <div class="item">
@@ -55,14 +57,17 @@
                     <label class="subtitulo" for="valor">Valor</label>
                     <input type="text" name="valor" id="valor" value="<?php echo $dados[0]['valor']?>">
                 </div>
+                <div class="sub-grid">
+                    <div class="item-desc">
+                        <label class="subtitulo" for="desc">Descrição</label>
+                        <textarea name="desc" id="desc" cols="30" rows="10"><?php echo $dados[0]['desc']?></textarea>
+                    </div>
+                    <div class="centraliza-botao">
+                        <input class="botao" type="submit" value="Salvar">
+                    </div>
+                </div>
             </div>
-            <div class="item-desc">
-                <label class="subtitulo" for="desc">Descrição</label>
-                <textarea name="desc" id="desc" cols="30" rows="10"><?php echo $dados[0]['desc']?></textarea>
-            </div>
-            <div class="centraliza-botao">
-                <input class="botao" type="submit" value="Salvar">
-            </div>
+    
         </form>
     </div>
     <?php 
