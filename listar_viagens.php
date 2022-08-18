@@ -36,8 +36,8 @@ try{
     <title>Lista de Viagens</title>
 </head>
 <body>    
-    <div id="container">
-        <h2 class="titulo">Lista de Viagens</h2> 
+    <div id="container-viagens">
+        <h2 class="titulo-viagens">Lista de Viagens</h2> 
         <div id="grid-viagens">
             <?php
                 foreach($dados as $d):

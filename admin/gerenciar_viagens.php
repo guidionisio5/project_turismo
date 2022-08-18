@@ -30,35 +30,34 @@
     <title>Gerenciar Viagens</title>
 </head>
 <body>
-    <div id="container">
+    <div id="container-gerenciar">
         <h2 class="titulo">Gerenciar Viagens</h2>
-        <hr>
         <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
-        <div id="tabela">
-            <table>
-                <tr class="item-tabela">
-                    <th>ID</th>
-                    <th>Título</th>
-                    <th>Local</th>
-                    <th>Valor</th>
-                    <th>Descrição</th>
-                    <th>Alterar</th>
-                    <th>Deletar</th>
+        <div id="tabela-gerenciar">
+            <table class="borda-gerenciar">
+                <tr class="item-gerenciar">
+                    <th class="subtitulo-gerenciar">ID</th>
+                    <th class="subtitulo-gerenciar">Título</th>
+                    <th class="subtitulo-gerenciar">Local</th>
+                    <th class="subtitulo-gerenciar">Valor</th>
+                    <th class="subtitulo-gerenciar">Descrição</th>
+                    <th class="subtitulo-gerenciar">Alterar</th>
+                    <th class="subtitulo-gerenciar">Deletar</th>
                 </tr>
                 <?php 
                     foreach($dados as $viagens):
                 ?>
-                <tr class="item-tabela">
-                    <td><?php echo $viagens['id'];?></td>
-                    <td><?php echo $viagens['titulo'];?></td>
-                    <td><?php echo $viagens['local'];?></td>
-                    <td><?php echo $viagens['valor'];?></td>
-                    <td><?php echo $viagens['desc'];?></td>
-                    <td>
-                        <a href="../admin/alterar_viagens.php?id=<?php echo $viagens['id'];?>">Alterar</a>
+                <tr class="item-gerenciar">
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['id'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['titulo'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['local'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['valor'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['desc'];?></td>
+                    <td class="subtitulo-gerenciar">
+                        <a class="table-link" href="../admin/alterar_viagens.php?id=<?php echo $viagens['id'];?>">Alterar</a>
                     </td>
-                    <td>
-                        <a href="../backend/_deletar_viagens.php?id=<?php echo $viagens['id'];?>">Deletar</a>
+                    <td class="subtitulo-gerenciar">
+                        <a class="table-link" href="../backend/_deletar_viagens.php?id=<?php echo $viagens['id'];?>">Deletar</a>
                     </td>
                 </tr>
                 <?php

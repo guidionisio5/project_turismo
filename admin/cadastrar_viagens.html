@@ -12,35 +12,33 @@
 <body>
     <div id="container">
         <h2 class="titulo">Cadastro de Viagens</h2>
-        <hr>
         <a class="sublink" href="gerenciar_viagens.php">Gerenciar viagens</a>
         <form action="../backend/_cadastrar_viagens.php" method="post" enctype="multipart/form-data">
             <div id="grid-formulario">
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="titulo">Título:</label>
-                    <input type="text" name="titulo" id="titulo" required>
+                    <input class="item" type="text" name="titulo" id="titulo" required>
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="local">Local:</label>
-                    <input type="text" name="local" id="local" required>
+                    <input class="item" type="text" name="local" id="local" required>
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="valor">Valor:</label>
-                    <input type="text" name="valor" id="valor" required>
+                    <input class="item" type="text" name="valor" id="valor" required>
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="imagem">Imagem:</label>
-                    <input type="file" name="imagem" id="imagem" required>
+                    <input class="item" type="file" name="imagem" id="imagem" required>
                 </div>
-                <div class="item-desc">
+                <div class="item-grid">
                     <label class="subtitulo" for="desc">Descrição:</label>
-                    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>
+                    <textarea class="item-desc" name="desc" id="desc"></textarea>
                 </div>
                 <div class="centraliza-botao">
                     <input class="botao" type="submit" value="Cadastrar">
                 </div>
             </div>
-           
         </form>
     </div>
 </body>

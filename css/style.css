@@ -1,164 +1,184 @@
-*{
+/*  Inicio Geral */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#container{
-    width: 60%;
+#container {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    border: 2px solid #000;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.sublink {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+.centraliza-botao {
+    text-align: center
+}
+
+.botao {
+    padding: 10px;
+    width: 20vh;
+    font-size: 15px;
+    background-color: #40d86e;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #000;
+}
+/* Fim Geral */
+
+/* Inicio Listar viagens */
+#container-viagens {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.titulo-viagens {
+    font-size: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+#grid-viagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.figure-viagens {
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.img-viagens {
+    width: 100%;
+}
+
+.figcaption-viagens {
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.botao-viagens {
+    padding: 6px 12px;
+    margin: 10px auto;
+    background-color: #40d86e;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #000;
+}
+/* Fim Listar viagens */
+
+/* Inicio Cadastro e Alterar Viagens */
+#grid-formulario {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    justify-items: center;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.item-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.item{
+    width: 20vw;
+    height: 5vh;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.item-desc{
+    width: 44vh;
+    height: 6vh;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+/* Fim Cadastro e Alterar viagens */
+
+/* Inicio Gerenciar viagens */
+#container-gerenciar {
+    width: 80%;
     height: 100vh;
     margin: 0 auto;
     display: grid;
     align-content: center;
 }
 
-.titulo {
-    text-align: center;
-    font-size: 40px;
-    padding: 20px;
-}
-
-.subgrid{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-items: center;
-}
-/* Inicio Cadastro de Viagens */
-#grid-formulario{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding: 30px;
-}
-
-.subtitulo{
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.item{
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-}
-
-.item input{
-    padding: 10px 50px;
-}
-
-.item-desc {
-    display: grid;
-    justify-items: center;
-    margin-top: 20px;
-}
-
-.centraliza-botao{
-    display: grid;
-    text-align: center;
-    align-items: flex-end;
-    grid-template-rows: repeat(1,1fr);
-}
-
-.botao{
-    padding: 10px 50px;
-    margin-top: 20px;
-    font-weight: bold;
-}
-/* Fim Cadastro de viagens */
-
-/* Inicio Listar viagens */
-#grid-viagens{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-}
-
-.figure-viagens{
-    border: 2px solid black;
-    border-radius: 4px;
-
-}
-
-.img-viagens{
-    width: 100%;
-}
-
-.figcaption-viagens{
-    display: grid;
-    padding: 20px;
-    gap: 20px;
-}
-
-.botao-viagens{
-    display: grid;
-    padding: 6px 12px;
-    margin: 10px auto;
-    background-color: #40d86e;
-    font-weight: bold;
-    border-radius: 3px;
-    color: white;
-}
-/* Fim Listar viagens */
-
-/* Inicio Gerenciar viagens */
-.sublink{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-}
-
-#tabela{
+#tabela-gerenciar {
     display: grid;
 }
 
-#tabela table{
+.borda-gerenciar {
     border-collapse: collapse;
 }
 
-#tabela tr th, tr td{
+.subtitulo-gerenciar {
     padding: 10px;
-}
-
-.item-tabela{
-    text-align: center;  
-}
-
-#tabela th,td{
     border: 2px solid black;
+}
+
+.item-gerenciar {
+    text-align: center;
+}
+
+.table-link {
+    text-align: center;
+    color: blue;
 }
 /* Fim Gerenciar produtos */
 
-/* Inicio Alterar produtos */
-#grid-alterar{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 30px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    padding: 30px;
-}
-/* Fim Alterar produtos */
-
 /* Inicio Entrar admin */
-.grid-usuario{
+#container-login {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    align-content: center;
+}
+
+.grid-login {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     padding: 30px;
 }
 
-.item-login{
+.item-login {
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
 }
 
-.item-input{
-    width: 40vw;
+.input-login {
+    width: 35vw;
     padding: 10px;
+    border: 2px solid #000;
+    border-radius: 3px;
 }
 /* Fim Entrar admin */
