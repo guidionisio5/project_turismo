@@ -31,9 +31,9 @@
 </head>
 <body>
     <div id="container-gerenciar">
-        <h2 class="titulo">Gerenciar Viagens</h2>
-        <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
         <div id="tabela-gerenciar">
+            <h2 class="titulo">Gerenciar Viagens</h2>
+            <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
             <table class="borda-gerenciar">
                 <tr class="item-gerenciar">
                     <th class="subtitulo-gerenciar">ID</th>
@@ -41,6 +41,7 @@
                     <th class="subtitulo-gerenciar">Local</th>
                     <th class="subtitulo-gerenciar">Valor</th>
                     <th class="subtitulo-gerenciar">Descrição</th>
+                    <th class="subtitulo-gerenciar">Imagem</th>
                     <th class="subtitulo-gerenciar">Alterar</th>
                     <th class="subtitulo-gerenciar">Deletar</th>
                 </tr>
@@ -53,6 +54,7 @@
                     <td class="subtitulo-gerenciar"><?php echo $viagens['local'];?></td>
                     <td class="subtitulo-gerenciar"><?php echo $viagens['valor'];?></td>
                     <td class="subtitulo-gerenciar"><?php echo $viagens['desc'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $viagens['imagem'];?></td>
                     <td class="subtitulo-gerenciar">
                         <a class="table-link" href="../admin/alterar_viagens.php?id=<?php echo $viagens['id'];?>">Alterar</a>
                     </td>

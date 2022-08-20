@@ -12,7 +12,7 @@
     margin: 0 auto;
     display: grid;
     align-content: center;
-    border: 2px solid #000;
+    /* border: 2px solid #000; */
 }
 
 .titulo {
@@ -20,16 +20,21 @@
     font-size: 40px;
 }
 
+.subtitulo{
+    font-weight: bold;
+}
+
 .sublink {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
-    padding: 20px;
-    color: blue;
+    padding: 10px;
+    text-decoration: none;
+    color: #0000ff;
 }
 
 .centraliza-botao {
-    text-align: center
+    text-align: center;
 }
 
 .botao {
@@ -69,6 +74,7 @@
 
 .img-viagens {
     width: 100%;
+    height: 240px;
 }
 
 .figcaption-viagens {
@@ -94,7 +100,10 @@
     gap: 20px;
     justify-items: center;
     border-radius: 3px;
-    padding: 20px;
+    padding: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .item-grid {
@@ -104,15 +113,15 @@
 }
 
 .item{
-    width: 20vw;
-    height: 5vh;
+    width: 300px;
+    height: 25px;
     border: 2px solid #000;
     border-radius: 3px;
 }
 
 .item-desc{
-    width: 44vh;
-    height: 6vh;
+    width: 300px;
+    height: 100px;
     border: 2px solid #000;
     border-radius: 3px;
 }
@@ -129,6 +138,8 @@
 
 #tabela-gerenciar {
     display: grid;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 50px;
 }
 
 .borda-gerenciar {
@@ -163,9 +174,9 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    border: 2px solid #000;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* border: 2px solid #000; */
     border-radius: 3px;
-    /* box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px; */
     padding: 30px;
 }
 

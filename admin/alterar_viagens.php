@@ -35,11 +35,12 @@
     <title>Alterar Viagens</title>
 </head>
 <body>
+    
     <div id="container">
-        <h2 class="titulo">Alterar Viagens</h2>
-        <a class="sublink" href="gerenciar_viagens.php">Gerenciar viagens</a>
         <form action="../backend/_alterar_viagens.php" method="post">
             <div id="grid-formulario">
+                <h2 class="titulo">Alterar Viagens</h2>
+                <a class="sublink" href="gerenciar_viagens.php">Gerenciar viagens</a>
                 <div class="item-grid">
                     <label class="subtitulo" for="id">ID</label>
                     <input class="item" type="text" name="id" id="id" value="<?php echo $dados[0]['id']?>" readonly>
@@ -57,8 +58,12 @@
                     <input class="item" type="text" name="valor" id="valor" value="<?php echo $dados[0]['valor']?>">
                 </div>
                 <div class="item-grid">
+                    <label class="subtitulo" for="imagem">Imagem</label>
+                    <input class="item" type="file" name="imagem" id="imagem" value="<?php echo $dados[0]['imagem']?>">
+                </div>
+                <div class="item-grid">
                     <label class="subtitulo" for="desc">Descrição</label>
-                    <textarea class="item" name="desc" id="desc" cols="30" rows="10"><?php echo $dados[0]['desc']?></textarea>
+                    <textarea class="item-desc" name="desc" id="desc" cols="30" rows="10"><?php echo $dados[0]['desc']?></textarea>
                 </div>
                 <div class="centraliza-botao">
                     <input class="botao" type="submit" value="Salvar">
