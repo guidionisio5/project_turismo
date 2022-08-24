@@ -34,6 +34,7 @@
         <div id="tabela-gerenciar">
             <h2 class="titulo">Gerenciar Viagens</h2>
             <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
+            <a class="sublink" href="index.html">Sair</a>
             <table class="borda-gerenciar">
                 <tr class="item-gerenciar">
                     <th class="subtitulo-gerenciar">ID</th>
