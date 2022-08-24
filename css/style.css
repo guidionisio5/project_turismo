@@ -7,12 +7,14 @@
 }
 
 #container {
-    width: 80%;
-    height: 100vh;
+    width: 70%;
+    height: auto;
     margin: 0 auto;
-    display: grid;
-    align-content: center;
-    /* border: 2px solid #000; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 3px;
 }
 
 .titulo {
@@ -49,15 +51,9 @@
 /* Fim Geral */
 
 /* Inicio Listar viagens */
-#container-viagens {
-    width: 70%;
-    height: auto;
-    margin: 0 auto;
-}
-
 .titulo-viagens {
     font-size: 40px;
-    padding: 40px;
+    padding: 20px;
     text-align: center;
 }
 
@@ -94,6 +90,22 @@
 /* Fim Listar viagens */
 
 /* Inicio Cadastro e Alterar Viagens */
+#container-formulario {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+    /* border: 2px solid #000; */
+}
+
+#container-alterar {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+}
+
 #grid-formulario {
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -110,17 +122,23 @@
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
+    gap: 2px;
 }
 
-.item{
-    width: 300px;
+.item {
+    width: 350px;
     height: 25px;
     border: 2px solid #000;
     border-radius: 3px;
 }
 
+.img-alterar {
+    width: 350px;
+    height: 300px;
+}
+
 .item-desc{
-    width: 300px;
+    width: 350px;
     height: 100px;
     border: 2px solid #000;
     border-radius: 3px;

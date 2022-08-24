@@ -36,8 +36,8 @@
 </head>
 <body>
     
-    <div id="container">
-        <form action="../backend/_alterar_viagens.php" method="post">
+    <div id="container-alterar">
+        <form action="../backend/_alterar_viagens.php" method="post" enctype="multipart/form-data">
             <div id="grid-formulario">
                 <h2 class="titulo">Alterar Viagens</h2>
                 <a class="sublink" href="gerenciar_viagens.php">Gerenciar viagens</a>
@@ -58,8 +58,12 @@
                     <input class="item" type="text" name="valor" id="valor" value="<?php echo $dados[0]['valor']?>">
                 </div>
                 <div class="item-grid">
-                    <label class="subtitulo" for="imagem">Imagem</label>
-                    <input class="item" type="file" name="imagem" id="imagem" value="<?php echo $dados[0]['imagem']?>">
+                    <label class="subtitulo" for="imagem">Imagem nova</label>
+                    <input class="item" type="file" name="imagem" id="imagem">
+                </div>
+                <div class="item-grid">
+                    <h4 class="subtitulo">Imagem antiga</h4>
+                    <img class="img-alterar" src="../img/upload/<?php echo $dados[0]['imagem']?>" alt="Imagem da Viagem Antiga">
                 </div>
                 <div class="item-grid">
                     <label class="subtitulo" for="desc">Descrição</label>
