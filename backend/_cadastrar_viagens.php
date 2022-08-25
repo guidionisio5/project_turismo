@@ -31,6 +31,7 @@ try{
         echo 'Formato de imagem inválido';
         exit;     
     } 
+    
     // gera um nome aleatorio para imagem(hash)
     $hash = md5(uniqid($_FILES['imagem']['tmp_name'],true));
     // echo $hash;
