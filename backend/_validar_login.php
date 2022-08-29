@@ -4,10 +4,10 @@ include "../includes/conexao.php";
 
 try{
 
-    $usuario = $_POST['email'];
+    $email = $_POST['email'];
     $senha = $_POST['senha'];
 
-    $sql = "SELECT * FROM tb_login WHERE email='$usuario' AND BINARY senha = '$senha' AND ativo = 1";
+    $sql = "SELECT * FROM tb_login WHERE email='$email' AND BINARY senha = '$senha' AND ativo = 1";
 
     $comando = $con->prepare($sql);
 
@@ -19,6 +19,13 @@ try{
 
     // verifica se existem resgistos dentro da variavel dados
     if($dados != null){
+        // inicia a sessao
+        session_start();
+        // criar uma variavel de sessao e adiciona o email digitado
+        $_SESSION['email'] = $email;
+        // exibe o valor adiconado na variavel de sessao email
+        var_dump($_SESSION['email']);
+
         // se o ususario e senha são validos, irá entrar nesse bloco de código
         header('location: ../admin/gerenciar_viagens.php');
     }else{
