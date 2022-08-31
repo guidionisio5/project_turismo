@@ -1,5 +1,7 @@
 <?php
-
+    // incluindo controle de sessao
+    include '../includes/controle_sessao.php';
+    // incluindo conexao
     include '../includes/conexao.php';
 
     try{
@@ -33,8 +35,8 @@
     <div id="container-gerenciar">
         <div id="tabela-gerenciar">
             <h2 class="titulo">Gerenciar Viagens</h2>
-            <a class="sublink" href="cadastrar_viagens.html">Cadastrar viagens</a>
-            <a class="sublink" href="index.html">Sair</a>
+            <a class="sublink" href="cadastrar_viagens.php">Cadastrar viagens</a>
+            <a class="sublink" href="../includes/logout.php">Sair</a>
             <table class="borda-gerenciar">
                 <tr class="item-gerenciar">
                     <th class="subtitulo-gerenciar">ID</th>

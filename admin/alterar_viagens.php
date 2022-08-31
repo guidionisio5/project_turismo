@@ -1,5 +1,7 @@
 <?php
-
+    // incluindo controle de sessao
+    include '../includes/controle_sessao.php';
+    // incluindo conexao
     include '../includes/conexao.php';
 
     // captura a var global ID recebida via GET

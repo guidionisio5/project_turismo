@@ -21,10 +21,14 @@ try{
     if($dados != null){
         // inicia a sessao
         session_start();
+        // var_dump(session_id()); 
+        // exit;
+
         // criar uma variavel de sessao e adiciona o email digitado
-        $_SESSION['email'] = $email;
+        $_SESSION['usuario'] = $email;
         // exibe o valor adiconado na variavel de sessao email
-        var_dump($_SESSION['email']);
+        // var_dump($_SESSION['email']);
+        // exit;
 
         // se o ususario e senha são validos, irá entrar nesse bloco de código
         header('location: ../admin/gerenciar_viagens.php');

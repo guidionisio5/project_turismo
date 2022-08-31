@@ -1,3 +1,7 @@
+<?php
+    // incluindo controle de sessao
+    include '../includes/controle_sessao.php';
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
